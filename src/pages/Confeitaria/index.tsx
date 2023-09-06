@@ -43,8 +43,8 @@ const estilos = StyleSheet.create({
     },
 
     nome: {
-        fontSize: 19,
-        lineHeight: 40,
+        fontSize: 30,
+        lineHeight: 60,
         color: "#464646",
         fontFamily: "Poppins600",
         textAlign: "center",
@@ -52,16 +52,19 @@ const estilos = StyleSheet.create({
     },
 
     descricao: {
-        color: "black",
-        fontFamily: "Poppins600",
-        textAlign: "justify"
+        fontSize: 16,
+        color: "#464646",
+        fontFamily: "Poppins400",
+        textAlign: "center",
+        padding: 12
     },
 
     preco: {
-        fontSize: 20,
+        fontSize: 14,
         fontFamily: "Poppins600",
-        color: "green",
-        marginTop: 8
+        color: "red",
+        textAlign: "right",
+        padding: 20
     }
     
 })
