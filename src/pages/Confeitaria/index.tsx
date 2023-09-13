@@ -1,7 +1,8 @@
 import React from "react";
 import {  Dimensions, Image, StyleSheet, Text, View } from 'react-native';
 import topo from '../../../assets/header.jpg';
-import logo from '../../../assets/logo.webp';
+import rocambole from "../../../assets/rocambole.jpg";
+import carolina from "../../../assets/carolina.png";
 
 const width = Dimensions.get('screen').width;
 
@@ -12,10 +13,18 @@ export default function Confeitaria() {
     <View>
         <Text style={estilos.nome}>Borcelle Confeitaria</Text>
 
-        <Text style={estilos.descricao}>Nesta cesta está cheio de doces da nossa carinhosa confeitaria!</Text>
-
-            <Text style={estilos.preco}>R$90,00</Text>
+        <Text style={estilos.descricao}>Os doces mais queridos da nossa carinhosa confeitaria!</Text>
     </View>
+    <View>
+        <Image source={rocambole} style={estilos.rocambole}/>
+    <Text style={estilos.nomerocambole}>Rocambole de Brigadeiro</Text>
+    <Text style={estilos.preco}>R$18,00</Text>
+
+    <Image source={carolina} style={estilos.carolina}/>
+    <Text style={estilos.nomerocambole}>Carolina com Doce de Leite</Text>
+    <Text style={estilos.preco}>R$1,90</Text>
+    </View>
+
     </>
 
 }
@@ -23,7 +32,19 @@ export default function Confeitaria() {
 const estilos = StyleSheet.create({
     topo: {
         width: "100%",
-        height: 578 / 768 * width,
+        height: 378 / 768 * width,
+    },
+
+    rocambole: {
+        width: "100%",
+        height: 130 / 768 * width,
+        
+    },
+
+    carolina: {
+        width: "100%",
+        height: 130 / 768 * width,
+        
     },
 
     titulo: {
@@ -51,8 +72,17 @@ const estilos = StyleSheet.create({
         padding: 10
     },
 
+    nomerocambole: {
+        fontSize: 20,
+        lineHeight: 60,
+        color: "#464646",
+        fontFamily: "Poppins600",
+        textAlign: "center",
+        padding: 10
+    },
+
     descricao: {
-        fontSize: 16,
+        fontSize: 15,
         color: "#464646",
         fontFamily: "Poppins400",
         textAlign: "center",
@@ -60,11 +90,11 @@ const estilos = StyleSheet.create({
     },
 
     preco: {
-        fontSize: 14,
+        fontSize: 13,
         fontFamily: "Poppins600",
         color: "red",
         textAlign: "right",
-        padding: 20
+        padding: 15
     }
     
 })
