@@ -18,11 +18,11 @@ export default function Confeitaria() {
     <View>
         <Image source={rocambole} style={estilos.rocambole}/>
     <Text style={estilos.nomerocambole}>Rocambole de Brigadeiro</Text>
-    <Text style={estilos.preco}>R$18,00</Text>
+    <Text style={estilos.precorocambole}>R$18,00</Text>
 
     <Image source={carolina} style={estilos.carolina}/>
-    <Text style={estilos.nomerocambole}>Carolina com Doce de Leite</Text>
-    <Text style={estilos.preco}>R$1,90</Text>
+    <Text style={estilos.nomecarolina}>Carolina com Doce de Leite</Text>
+    <Text style={estilos.precocarolina}>R$1,90</Text>
     </View>
 
     </>
@@ -81,6 +81,15 @@ const estilos = StyleSheet.create({
         padding: 10
     },
 
+    nomecarolina: {
+        fontSize: 20,
+        lineHeight: 60,
+        color: "#464646",
+        fontFamily: "Poppins600",
+        textAlign: "center",
+        padding: 10
+    },
+
     descricao: {
         fontSize: 15,
         color: "#464646",
@@ -89,12 +98,20 @@ const estilos = StyleSheet.create({
         padding: 12
     },
 
-    preco: {
+    precorocambole: {
         fontSize: 13,
         fontFamily: "Poppins600",
         color: "red",
         textAlign: "right",
         padding: 15
-    }
+    },
+
+    precocarolina: {
+        fontSize: 13,
+        fontFamily: "Poppins600",
+        color: "red",
+        textAlign: "right",
+        padding: 15
+    },
     
 })
