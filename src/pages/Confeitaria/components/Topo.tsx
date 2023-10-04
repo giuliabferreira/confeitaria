@@ -8,10 +8,12 @@ type Props = {
     titulo: string
 }
 
-export default function Topo({titulo, }: Props) {
-    return<>
+export default function Topo({titulo}: Props) {
+    return <>
 
     <Image style={estilos.topo} source={header}/>
+    
+    <Text style={estilos.titulo}>{titulo}</Text>
     </>
 }
 

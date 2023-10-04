@@ -1,5 +1,6 @@
 import React from "react";
 import {  Dimensions, Image, StyleSheet, Text, View } from 'react-native';
+
 import topo from '../../../assets/header.jpg';
 import rocambole from "../../../assets/rocambole.jpg";
 import carolina from "../../../assets/carolina.png";
@@ -15,6 +16,7 @@ export default function Confeitaria() {
 
         <Text style={estilos.descricao}>Os doces mais queridos da nossa carinhosa confeitaria!</Text>
     </View>
+
     <View>
         <Image source={rocambole} style={estilos.rocambole}/>
     <Text style={estilos.nomerocambole}>Rocambole de Brigadeiro</Text>
@@ -30,11 +32,6 @@ export default function Confeitaria() {
 }
 
 const estilos = StyleSheet.create({
-    topo: {
-        width: "100%",
-        height: 378 / 768 * width,
-    },
-
     rocambole: {
         width: "100%",
         height: 130 / 768 * width,
